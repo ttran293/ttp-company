@@ -12,8 +12,10 @@ const Hero = () => {
           ngôi nhà của bạn
         </h1>
         <p>
-          Thanh Thanh Phương là một trong số nhà phân phối số 1 khu vực miền Nam chúng tôi chuyên phân
-          phối và cung cấp vật liệu xây dựng, trang trí nội và ngoại thất.
+          Thanh Thanh Phương là {" "}
+          <mark>một trong số nhà phân phối số 1 khu vực miền Nam</mark>. Chúng
+          tôi chuyên phân phối và cung cấp vật liệu xây dựng, trang trí nội và
+          ngoại thất.
         </p>
         <Link to="/products" className="btn hero-btn">
           xem thêm
@@ -51,6 +53,9 @@ const Wrapper = styled.section`
     p {
       font-size: 1.25rem;
     }
+    mark {
+      background-color: var(--clr-grey-9);
+    }
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
@@ -76,7 +81,7 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
     .img-container::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 10%;
       height: 90%;
@@ -86,6 +91,6 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
   }
-`
+`;
 
 export default Hero

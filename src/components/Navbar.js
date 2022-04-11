@@ -16,7 +16,7 @@ const Nav = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
-            <img src={logo} alt='comfy sloth'/>
+            <h3>Thanh Thanh Phương</h3>
           </Link>
           <button type='button' className='nav-toggle' onClick={openSidebar}>
             <FaBars />
@@ -58,6 +58,9 @@ const NavContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    h3 {
+      color: var(--clr-grey-3);
+    }
     img {
       width: 50px;
       margin-left: -15px;
@@ -108,6 +111,6 @@ const NavContainer = styled.nav`
       display: grid;
     }
   }
-`
+`;
 
 export default Nav

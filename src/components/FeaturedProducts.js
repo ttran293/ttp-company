@@ -19,21 +19,21 @@ const FeaturedProducts = () => {
     return <Error />
   }
   return (
-    <Wrapper className='section'>
-      <div className='title'>
-        <h2>featured products</h2>
-        <div className='underline'></div>
+    <Wrapper className="section">
+      <div className="title">
+        <h2>sản phẩm nổi bật</h2>
+        <div className="underline"></div>
       </div>
-      <div className='section-center featured'>
+      <div className="section-center featured">
         {featured.slice(0, 3).map((product) => {
-          return <Product key={product.id} {...product} />
+          return <Product key={product.id} {...product} />;
         })}
       </div>
-      <Link to='/products' className='btn'>
-        all products
+      <Link to="/products" className="btn">
+        xem tất cả
       </Link>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.section`

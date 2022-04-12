@@ -5,33 +5,32 @@ import { services } from '../utils/constants'
 const Services = () => {
   return (
     <Wrapper>
-      <div className='section-center'>
-        <article className='header'>
+      <div className="section-center">
+        <article className="header">
           <h3>
-            custom furniture <br />
-            built only for you
+            Sẵn sàng có được <br /> những vật liệu <br />
+            chất lượng tốt nhất
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            quisquam saepe id reiciendis sunt, repudiandae libero amet rem quia
-            quod?
+            Đến với Showroom Thanh Thanh Phương bạn sẽ không chỉ nhận được sự tư
+            vấn nhiệt tình mà còn được hưởng mức giá cạnh tranh nhất.
           </p>
         </article>
-        <div className='services-center'>
+        <div className="services-center">
           {services.map((service) => {
-            const { id, icon, title, text } = service
+            const { id, icon, title, text } = service;
             return (
-              <article key={id} className='service'>
-                <span className='icon'>{icon} </span>
+              <article key={id} className="service">
+                <span className="icon">{icon} </span>
                 <h4>{title}</h4>
                 <p>{text}</p>
               </article>
-            )
+            );
           })}
         </div>
       </div>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.section`

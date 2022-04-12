@@ -1,5 +1,5 @@
 import React from 'react'
-import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
+import { GiHexagonalNut, GiDiamondHard, GiHumanPyramid } from "react-icons/gi";
 export const links = [
   {
     id: 1,
@@ -21,26 +21,23 @@ export const links = [
 export const services = [
   {
     id: 1,
-    icon: <GiCompass />,
-    title: 'mission',
-    text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    icon: <GiHexagonalNut />,
+    title: "Uy tín",
+    text: "Sự an toàn và hài lòng của bạn ưu tiên của chúng tôi",
   },
   {
     id: 2,
     icon: <GiDiamondHard />,
-    title: 'vision',
-    text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    title: "Kiến tạo",
+    text: "Thiết kế tương lai của bạn với chúng tôi với những sản phẩm mới nhất",
   },
   {
     id: 3,
-    icon: <GiStabbedNote />,
-    title: 'history',
-    text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    icon: <GiHumanPyramid />,
+    title: "kết nối",
+    text: "Xây dựng mối quan hệ của chúng ta bằng cách tạo ra ngôi nhà của bạn",
   },
-]
+];
 
 export const products_url = 'https://course-api.com/react-store-products'
 

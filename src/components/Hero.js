@@ -90,6 +90,18 @@ const Wrapper = styled.section`
       left: -8%;
       border-radius: var(--radius);
     }
+    .img-container::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 90%;
+      background: var(--clr-primary-9);
+      bottom: 0%;
+      right: -10%;
+      border-radius: var(--radius);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 `;
 

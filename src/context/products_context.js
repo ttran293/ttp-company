@@ -2,7 +2,11 @@ import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/products_reducer'
 import { products_url as url } from '../utils/constants'
+import products_list from "./../data/product_list";
+
+
 import {
+
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
   GET_PRODUCTS_BEGIN,
@@ -36,16 +40,16 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: SIDEBAR_CLOSE })
   }
 
-  const fetchProducts = async (url) => {
-    dispatch({ type: GET_PRODUCTS_BEGIN })
-    try {
-      const response = await axios.get(url)
-      const products = response.data
-      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
-    } catch (error) {
-      dispatch({ type: GET_PRODUCTS_ERROR })
-    }
-  }
+  // const fetchProducts = async (url) => {
+  //   dispatch({ type: GET_PRODUCTS_BEGIN })
+  //   try {
+  //     const response = await axios.get(url)
+  //     const products = response.data
+  //     dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
+  //   } catch (error) {
+  //     dispatch({ type: GET_PRODUCTS_ERROR })
+  //   }
+  // }
 
   const fetchSingleProduct = async (url) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN })
@@ -59,7 +63,7 @@ export const ProductsProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    fetchProducts(url)
+    dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products_list });
   }, [])
 
   return (

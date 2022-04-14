@@ -7,7 +7,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()}
         <span> Thanh Thanh Phương</span>
       </h5>
-      <h5>Copyrights reserved</h5>
+      <h5>Copyright</h5>
     </Wrapper>
   )
 }

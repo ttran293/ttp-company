@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styled from 'styled-components'
 import { formatPrice } from '../utils/helpers'
@@ -52,6 +53,9 @@ const Wrapper = styled.article`
   justify-items: center;
   margin-bottom: 3rem;
   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   .title {
     height: 100%;
     display: grid;
@@ -71,7 +75,6 @@ const Wrapper = styled.article`
     font-size: 0.75rem;
     margin-bottom: 0;
   }
-
   .color {
     color: var(--clr-grey-5);
     font-size: 0.75rem;
@@ -93,6 +96,8 @@ const Wrapper = styled.article`
   .price-small {
     color: var(--clr-primary-5);
   }
+
+  
   .amount-btns {
     width: 75px;
     button {
@@ -120,6 +125,9 @@ const Wrapper = styled.article`
     cursor: pointer;
   }
   @media (min-width: 776px) {
+    display: grid;
+    grid-template-columns: 220px 1fr 1fr 1fr auto;
+    justify-items: center;
     .subtotal {
       display: block;
       margin-bottom: 0;
@@ -146,19 +154,18 @@ const Wrapper = styled.article`
         height: 0.75rem;
       }
     }
-    grid-template-columns: 1fr 1fr 1fr 1fr auto;
-    align-items: center;
-    grid-template-rows: 75px;
+
     img {
-      height: 100%;
+      height: 50%;
     }
     .title {
       height: 100%;
       display: grid;
-      grid-template-columns: 100px 200px;
+      ${'' /* grid-template-columns: 100px 200px; */}
       align-items: center;
       gap: 1rem;
       text-align: left;
+      margin-bottom: 1.5rem;
     }
     .amount-btns {
       width: 100px;
@@ -172,6 +179,6 @@ const Wrapper = styled.article`
       }
     }
   }
-`
+`;
 
 export default CartItem

@@ -4,21 +4,21 @@ import { FaPlus, FaMinus } from 'react-icons/fa'
 
 const AmountButtons = ({ increase, decrease, amount }) => {
   return (
-    <Wrapper className='amount-btsn'>
-      <button type='button' className='amount-btn' onClick={decrease}>
+    <Wrapper className="amount-btns">
+      <button type="button" className="amount-btn" onClick={decrease}>
         <FaMinus />
       </button>
-      <h2 className='amount'>{amount}</h2>
-      <button type='button' className='amount-btn' onClick={increase}>
+      <h2 className="amount">{amount}</h2>
+      <button type="button" className="amount-btn" onClick={increase}>
         <FaPlus />
       </button>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.div`
   display: grid;
-  width: 140px;
+  width: 120px;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;

@@ -8,19 +8,19 @@ const CartPage = () => {
   const { cart } = useCartContext()
   if (cart.length < 1) {
     return (
-      <Wrapper className='page-100'>
-        <div className='empty'>
-          <h2>Your cart is empty</h2>
-          <Link to='/products' className='btn'>
-            fill it
+      <Wrapper className="page-100">
+        <div className="empty">
+          <h2>Giỏ hàng của bạn đang trống</h2>
+          <Link to="/products" className="btn">
+            Bắt đầu tại đây
           </Link>
         </div>
       </Wrapper>
-    )
+    );
   }
   return (
     <main>
-      <PageHero title='cart' />
+      <PageHero title='Giỏ Hàng' />
       <Wrapper className='page'>
         <CartContent />
       </Wrapper>

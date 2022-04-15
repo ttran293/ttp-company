@@ -25,7 +25,7 @@ const SingleProductPage = () => {
   } = useProductsContext()
 
   useEffect(() => {
-    fetchSingleProduct(`${url}${id}`)
+    fetchSingleProduct(id)
     // eslint-disable-next-line
   }, [id])
 
@@ -53,31 +53,32 @@ const SingleProductPage = () => {
     reviews,
     id: sku,
     company,
-    images,
+    image,
   } = product
   return (
     <Wrapper>
       <PageHero title={name} product />
-      <div className='section section-center page'>
-        <Link to='/products' className='btn'>
+      <div className="section section-center page">
+        <Link to="/products" className="btn">
           back to products
         </Link>
-        <div className=' product-center'>
-          <ProductImages images={images} />
-          <section className='content'>
+        <div className=" product-center">
+          {/* <ProductImages images={image} /> */}
+          <img src={image} alt="main" className="main" />
+          <section className="content">
             <h2>{name}</h2>
             <Stars stars={stars} reviews={reviews} />
-            <h5 className='price'> {formatPrice(price)}</h5>
-            <p className='desc'> {description}</p>
-            <p className='info'>
+            <h5 className="price"> {formatPrice(price)}</h5>
+            <p className="desc"> {description}</p>
+            <p className="info">
               <span>Available : </span>
-              {stock > 0 ? 'In stock' : 'out of stock'}
+              {stock > 0 ? "In stock" : "out of stock"}
             </p>
-            <p className='info'>
+            <p className="info">
               <span>SKU : </span>
               {sku}
             </p>
-            <p className='info'>
+            <p className="info">
               <span>Brand : </span>
               {company}
             </p>
@@ -87,7 +88,7 @@ const SingleProductPage = () => {
         </div>
       </div>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.main`

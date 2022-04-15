@@ -40,22 +40,22 @@ export const ProductsProvider = ({ children }) => {
     dispatch({ type: SIDEBAR_CLOSE })
   }
 
-  // const fetchProducts = async (url) => {
-  //   dispatch({ type: GET_PRODUCTS_BEGIN })
-  //   try {
-  //     const response = await axios.get(url)
-  //     const products = response.data
-  //     dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
-  //   } catch (error) {
-  //     dispatch({ type: GET_PRODUCTS_ERROR })
-  //   }
-  // }
+  const fetchProducts = async () => {
+    dispatch({ type: GET_PRODUCTS_BEGIN })
+    try {
+      // const response = await axios.get(url)
+      const products = products_list;
+      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products })
+    } catch (error) {
+      dispatch({ type: GET_PRODUCTS_ERROR })
+    }
+  }
 
-  const fetchSingleProduct = async (url) => {
+  const fetchSingleProduct = async (id) => {
     dispatch({ type: GET_SINGLE_PRODUCT_BEGIN })
     try {
-      const response = await axios.get(url)
-      const singleProduct = response.data
+      
+      const singleProduct = products_list.find(p=>p.id === id);
       dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct })
     } catch (error) {
       dispatch({ type: GET_SINGLE_PRODUCT_ERROR })
@@ -63,7 +63,7 @@ export const ProductsProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products_list });
+    fetchProducts()
   }, [])
 
   return (

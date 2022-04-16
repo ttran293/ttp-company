@@ -34,7 +34,7 @@ const Filters = () => {
             <input
               type='text'
               name='text'
-              placeholder='search'
+              placeholder='Tìm kiếm'
               className='search-input'
               value={text}
               onChange={updateFilters}
@@ -43,7 +43,7 @@ const Filters = () => {
           {/* end search input */}
           {/* categories */}
           <div className='form-control'>
-            <h5>category</h5>
+            <h5>Theo danh mục</h5>
             <div>
               {categories.map((c, index) => {
                 return (
@@ -65,7 +65,7 @@ const Filters = () => {
           {/* end of categories */}
           {/* companies */}
           <div className='form-control'>
-            <h5>company</h5>
+            <h5>Thương hiệu</h5>
             <select
               name='company'
               value={company}
@@ -86,7 +86,7 @@ const Filters = () => {
           colors
           */}
           <div className='form-control'>
-            <h5>colors</h5>
+            <h5>Màu sắc</h5>
             <div className='colors'>
               {colors.map((c, index) => {
                 if (c === 'all') {
@@ -126,7 +126,7 @@ end of           colors
           */}
           {/* price */}
           <div className='form-control'>
-            <h5>price</h5>
+            <h5>Khoảng giá</h5>
             <p className='price'>{formatPrice(price)}</p>
             <input
               type='range'
@@ -140,7 +140,7 @@ end of           colors
           {/* end of price */}
           {/* shippping */}
           <div className='form-control shipping'>
-            <label htmlFor='shipping'> free shipping</label>
+            <label htmlFor='shipping'> Miễn phí vận chuyển</label>
             <input
               type='checkbox'
               name='shipping'
@@ -153,7 +153,7 @@ end of           colors
         </form>
         <button type='button' className='clear-btn' onClick={clearFilters}>
           {' '}
-          clear filters
+          xóa lọc
         </button>
       </div>
     </Wrapper>

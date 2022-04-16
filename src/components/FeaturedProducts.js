@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'
+import products_list from "./../data/product_list";
 
 const FeaturedProducts = () => {
   const {
@@ -25,7 +26,7 @@ const FeaturedProducts = () => {
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
-        {featured.slice(0, 3).map((product) => {
+        {products_list.slice(0, 3).map((product) => {
           return <Product key={product.id} {...product} />;
         })}
       </div>

@@ -5,7 +5,7 @@ import { Filters, ProductList, Sort, PageHero } from '../components'
 const ProductsPage = () => {
   return (
     <main>
-      <PageHero title='products' />
+      <PageHero title='Sản phẩm' />
       <Wrapper className='page'>
         <div className='section-center products'>
           <Filters />

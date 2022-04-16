@@ -6,12 +6,12 @@ import aboutImg from '../assets/hero-bcg.jpeg'
 const AboutPage = () => {
   return (
     <main>
-      <PageHero title='about' />
+      <PageHero title='Giới thiệu' />
       <Wrapper className='page section section-center'>
         <img src={aboutImg} alt='nice desk' />
         <article>
           <div className='title'>
-            <h2>our story</h2>
+            <h2>Thông tin</h2>
             <div className='underline'></div>
           </div>
           <p>

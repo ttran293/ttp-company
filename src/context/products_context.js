@@ -6,7 +6,6 @@ import products_list from "./../data/product_list";
 
 
 import {
-
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
   GET_PRODUCTS_BEGIN,
@@ -22,7 +21,6 @@ const initialState = {
   products_loading: false,
   products_error: false,
   products: [],
-  featured_products: [],
   single_product_loading: false,
   single_product_error: false,
   single_product: {},

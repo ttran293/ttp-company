@@ -8,7 +8,7 @@ const AmountButtons = ({ increase, decrease, amount }) => {
       <button type="button" className="amount-btn" onClick={decrease}>
         <FaMinus />
       </button>
-      <h2 className="amount">{amount}</h2>
+      <h3 className="amount">{amount}</h3>
       <button type="button" className="amount-btn" onClick={increase}>
         <FaPlus />
       </button>
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
-  h2 {
+  h3 {
     margin-bottom: 0;
   }
 `

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Slider from "infinite-react-carousel";
 import dongtam from "../assets/partners/dongtam.jpg";
 import hatien from "../assets/partners/hatien.png";
 import inax from "../assets/partners/inax.png";

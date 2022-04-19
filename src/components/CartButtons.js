@@ -14,7 +14,7 @@ const CartButtons = () => {
     <Wrapper className='cart-btn-wrapper'>
       <Link to='/cart' className='cart-btn' onClick={closeSidebar}>
         <span className='cart-container'>
-          Giỏ Hàng <FaShoppingCart />
+           <FaShoppingCart />
           <span className='cart-value'>{total_items}</span>
         </span>
       </Link>
@@ -28,11 +28,11 @@ const CartButtons = () => {
             logout({ returnTo: window.location.origin })
           }}
         >
-          Đăng xuất <FaUserMinus />
+          <FaUserMinus />
         </button>
       ) : (
         <button type='button' className='auth-btn' onClick={loginWithRedirect}>
-          Đăng nhập <FaUserPlus />
+           <FaUserPlus />
         </button>
       )}
     </Wrapper>
@@ -41,9 +41,8 @@ const CartButtons = () => {
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 75px 1fr;
   align-items: center;
-
 
   .cart-btn {
     color: var(--clr-grey-1);
@@ -91,5 +90,5 @@ const Wrapper = styled.div`
       margin-left: 5px;
     }
   }
-`
+`;
 export default CartButtons

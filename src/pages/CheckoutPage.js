@@ -10,13 +10,13 @@ const CheckoutPage = () => {
   const { cart } = useCartContext()
   return (
     <main>
-      <PageHero title='checkout' />
-      <Wrapper className='page'>
+      <PageHero title="Thanh toán" />
+      <Wrapper className="page">
         {cart.length < 1 ? (
-          <div className='empty'>
-            <h2>your cart is empty</h2>
-            <Link to='/products' className='btn'>
-              fill it
+          <div className="empty">
+            <h2>Giỏ hàng của bạn đang trống</h2>
+            <Link to="/products" className="btn">
+              Bắt đầu tại đây
             </Link>
           </div>
         ) : (
@@ -24,7 +24,7 @@ const CheckoutPage = () => {
         )}
       </Wrapper>
     </main>
-  )
+  );
 }
 const Wrapper = styled.div`
   display: flex;

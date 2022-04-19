@@ -29,6 +29,7 @@ const CartTotals = () => {
           <Link to='/checkout' className='btn'>
             Thanh toán
           </Link>
+          
         ) : (
           <button type='button' className='btn' onClick={loginWithRedirect}>
             đăng nhập

@@ -60,7 +60,7 @@ const SingleProductPage = () => {
       <PageHero title={name} product />
       <div className="section section-center page">
         <Link to="/products" className="btn">
-          back to products
+          Xem tất cả sản phẩm
         </Link>
         <div className=" product-center">
           {/* <ProductImages images={image} /> */}
@@ -71,15 +71,15 @@ const SingleProductPage = () => {
             <h5 className="price"> {formatPrice(price)}</h5>
             <p className="desc"> {description}</p>
             <p className="info">
-              <span>Available : </span>
-              {stock > 0 ? "In stock" : "out of stock"}
+              <span>Số lượng : </span>
+              {stock > 0 ? stock + " sản phẩm có sẵn" : "Tạm thời hết hàng"}
             </p>
             <p className="info">
               <span>SKU : </span>
               {sku}
             </p>
             <p className="info">
-              <span>Brand : </span>
+              <span>Hãng : </span>
               {company}
             </p>
             <hr />
@@ -92,6 +92,10 @@ const SingleProductPage = () => {
 }
 
 const Wrapper = styled.main`
+  .main {
+    height: 200px;
+    width: 100%;
+  }
   .product-center {
     display: grid;
     gap: 4rem;
@@ -115,6 +119,10 @@ const Wrapper = styled.main`
   }
 
   @media (min-width: 992px) {
+    .main {
+      height: 500px;
+      width: 100%;
+    }
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -123,6 +131,6 @@ const Wrapper = styled.main`
       font-size: 1.25rem;
     }
   }
-`
+`;
 
 export default SingleProductPage

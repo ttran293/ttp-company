@@ -5,7 +5,7 @@ import { formatPrice } from '../utils/helpers'
 import AmountButtons from './AmountButtons'
 import { FaTrash } from 'react-icons/fa'
 import { useCartContext } from '../context/cart_context'
-const CartItem = ({ id, image, name, color, price, amount }) => {
+const CartItem = ({ id, image, name, color, price, amount,checkout }) => {
   const { removeItem, toggleAmount } = useCartContext()
   const increase = () => {
     toggleAmount(id, 'inc')
@@ -15,28 +15,28 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
   }
   return (
     <Wrapper>
-      <div className='title'>
+      <div className="title">
         <img src={image} alt={name} />
         <div>
-          <h5 className='name'>{name}</h5>
-          <p className='color'>
+          <h5 className="name">{name}</h5>
+          <p className="color">
             color : <span style={{ background: color }}></span>
           </p>
-          <h5 className='price-small'>{formatPrice(price)}</h5>
+          <h5 className="price-small">{formatPrice(price)}</h5>
         </div>
       </div>
-      <h5 className='price'>{formatPrice(price)}</h5>
+      <h5 className="price">{formatPrice(price)}</h5>
       <AmountButtons amount={amount} increase={increase} decrease={decrease} />
-      <h5 className='subtotal'>{formatPrice(price * amount)}</h5>
+      <h5 className="subtotal">{formatPrice(price * amount)}</h5>
       <button
-        type='button'
-        className='remove-btn'
+        type="button"
+        className="remove-btn"
         onClick={() => removeItem(id)}
       >
         <FaTrash />
       </button>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.article`
@@ -51,7 +51,8 @@ const Wrapper = styled.article`
   grid-template-rows: 75px;
   gap: 3rem 1rem;
   justify-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   align-items: center;
   display: flex;
   align-items: center;
@@ -97,7 +98,6 @@ const Wrapper = styled.article`
     color: var(--clr-primary-5);
   }
 
-  
   .amount-btns {
     width: 75px;
     button {
@@ -161,11 +161,10 @@ const Wrapper = styled.article`
     .title {
       height: 100%;
       display: grid;
-      ${'' /* grid-template-columns: 100px 200px; */}
+      ${"" /* grid-template-columns: 100px 200px; */}
       align-items: center;
       gap: 1rem;
       text-align: left;
-      margin-bottom: 1.5rem;
     }
     .amount-btns {
       width: 100px;

@@ -18,7 +18,7 @@ const Sidebar = () => {
         className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}
       >
         <div className='sidebar-header'>
-          <img src={logo} className='logo' alt='comfy sloth' />
+          {/* <img src={logo} className='logo' alt='comfy sloth' /> */}
           <button className='close-btn' type='button' onClick={closeSidebar}>
             <FaTimes />
           </button>
@@ -33,13 +33,13 @@ const Sidebar = () => {
               </li>
             )
           })}
-          {myUser && (
+          {/* {myUser && (
             <li>
               <Link to='/checkout' onClick={closeSidebar}>
                 checkout
               </Link>
             </li>
-          )}
+          )} */}
         </ul>
         <CartButtons />
       </aside>

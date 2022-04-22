@@ -31,11 +31,11 @@ const Nav = () => {
               </li>
             )
           })}
-          {myUser && (
+          {/* {myUser && (
             <li>
               <Link to='/checkout'>Thanh Toán</Link>
             </li>
-          )}
+          )} */}
         </ul>
         <CartButtons />
       </div>

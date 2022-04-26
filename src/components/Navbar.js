@@ -8,15 +8,15 @@ import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
 
-const Nav = () => {
-  const { openSidebar } = useProductsContext()
-  const { myUser } = useUserContext()
+const Navbar = () => {
+  const { openSidebar } = useProductsContext();
+  const { myUser } = useUserContext();
   return (
     <NavContainer>
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logo} alt={logo} />
+            <img src={logo} alt="logo" />
           </Link>
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
@@ -31,17 +31,12 @@ const Nav = () => {
               </li>
             );
           })}
-          {/* {myUser && (
-            <li>
-              <Link to='/checkout'>Thanh Toán</Link>
-            </li>
-          )} */}
         </ul>
         <CartButtons />
       </div>
     </NavContainer>
   );
-}
+};
 
 const NavContainer = styled.nav`
   height: 5rem;
@@ -118,4 +113,4 @@ const NavContainer = styled.nav`
   }
 `;
 
-export default Nav
+export default Navbar;

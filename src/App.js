@@ -14,6 +14,7 @@ import {
   PrivateRoute,
   AuthWrapper,
 } from "./pages";
+
 require("dotenv").config();
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logo.png'
+import logo from '../assets/Logo.png'
 import { FaBars } from 'react-icons/fa' 
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -13,23 +13,23 @@ const Nav = () => {
   const { myUser } = useUserContext()
   return (
     <NavContainer>
-      <div className='nav-center'>
-        <div className='nav-header'>
-          <Link to='/'>
-            <h3>Thanh Thanh Phương</h3>
+      <div className="nav-center">
+        <div className="nav-header">
+          <Link to="/">
+            <img src={logo} alt={logo} />
           </Link>
-          <button type='button' className='nav-toggle' onClick={openSidebar}>
+          <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
-        <ul className='nav-links'>
+        <ul className="nav-links">
           {links.map((link) => {
-            const { id, text, url } = link
+            const { id, text, url } = link;
             return (
               <li key={id}>
                 <Link to={url}>{text}</Link>
               </li>
-            )
+            );
           })}
           {/* {myUser && (
             <li>
@@ -40,7 +40,7 @@ const Nav = () => {
         <CartButtons />
       </div>
     </NavContainer>
-  )
+  );
 }
 
 const NavContainer = styled.nav`
@@ -52,7 +52,7 @@ const NavContainer = styled.nav`
   .nav-center {
     width: 90vw;
     margin: 0 auto;
-    max-width: var(--max-width);
+ 
   }
   .nav-header {
     display: flex;
@@ -61,10 +61,11 @@ const NavContainer = styled.nav`
     h3 {
       color: var(--clr-grey-3);
     }
-    img {
-      width: 50px;
-      margin-left: -15px;
-    }
+  }
+  img {
+    width: 150px;
+    margin-left: -50px;
+    margin-top: 10px;
   }
   .nav-toggle {
     background: transparent;
@@ -82,6 +83,11 @@ const NavContainer = styled.nav`
     display: none;
   }
   @media (min-width: 992px) {
+    img {
+      width: 200px;
+      margin-top: 15px;
+      margin-left: -65px;
+    }
     .nav-toggle {
       display: none;
     }

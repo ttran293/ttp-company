@@ -171,7 +171,7 @@ const Wrapper = styled.section`
     padding: 0.5rem;
     background: var(--clr-grey-10);
     border-radius: var(--radius);
-    border-color: transparent;
+    border-color: black;
     letter-spacing: var(--spacing);
   }
   .search-input::placeholder {
@@ -257,6 +257,6 @@ const Wrapper = styled.section`
       top: 1rem;
     }
   }
-`
+`;
 
 export default Filters

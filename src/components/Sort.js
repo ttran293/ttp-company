@@ -13,41 +13,41 @@ const Sort = () => {
   } = useFilterContext()
   return (
     <Wrapper>
-      <div className='btn-container'>
+      <div className="btn-container">
         <button
-          type='button'
-          className={`${grid_view ? 'active' : null}`}
+          type="button"
+          className={`${grid_view ? "active" : null}`}
           onClick={setGridView}
         >
           <BsFillGridFill />
         </button>
         <button
-          type='button'
-          className={`${!grid_view ? 'active' : null}`}
+          type="button"
+          className={`${!grid_view ? "active" : null}`}
           onClick={setListView}
         >
           <BsList />
         </button>
       </div>
-      <p>{products.length} products found</p>
+      <p>{products.length} kết quả tìm kiếm</p>
       <hr />
       <form>
-        <label htmlFor='sort'>sort by</label>
+        <label htmlFor="sort">Sắp xếp theo</label>
         <select
-          name='sort'
-          id='sort'
-          className='sort-input'
+          name="sort"
+          id="sort"
+          className="sort-input"
           value={sort}
           onChange={updateSort}
         >
-          <option value='price-lowest'>price (lowest)</option>
-          <option value='price-highest'>price (highest)</option>
-          <option value='name-a'>name (a-z)</option>
-          <option value='name-z'>name (z-a)</option>
+          <option value="price-lowest">Giá (thấp đến cao)</option>
+          <option value="price-highest">Giá (cao đến thấp)</option>
+          <option value="name-a">Tên (a-z)</option>
+          <option value="name-z">Tên (z-a)</option>
         </select>
       </form>
     </Wrapper>
-  )
+  );
 }
 
 const Wrapper = styled.section`

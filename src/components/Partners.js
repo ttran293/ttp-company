@@ -21,20 +21,17 @@ const Partners = () => {
     <Wrapper>
       <div className="section-center">
         <h3>Đối tác kinh doanh</h3>
-        <p>Thanh Thanh Phương cộng tác với nhiều doanh nghiệp và tổ chức lớn trên thế giới để cung cấp nhiều mặt hàng mới nhất.</p>
+        <p>
+          Thanh Thanh Phương cộng tác với nhiều doanh nghiệp và tổ chức lớn trên
+          thế giới để cung cấp nhiều mặt hàng mới nhất.
+        </p>
         <div className="partners-logo-container">
-          <img src={dongtam} alt="nice table" className="partners-logo" />
-
-          <img src={hatien} alt="nice table" className="partners-logo" />
-
           <img src={inax} alt="nice table" className="partners-logo" />
-
           <img src={insee} alt="nice table" className="partners-logo" />
-
+          <img src={dongtam} alt="nice table" className="partners-logo" />
+          <img src={hatien} alt="nice table" className="partners-logo" />
           <img src={spec} alt="nice table" className="partners-logo" />
-
           <img src={toto} alt="nice table" className="partners-logo" />
-
           <img src={weber} alt="nice table" className="partners-logo" />
         </div>
       </div>
@@ -43,7 +40,7 @@ const Partners = () => {
 };
 
 const Wrapper = styled.section`
-  padding-top: 22rem;
+  padding-top: 5rem;
   padding-bottom: 0rem;
   padding-left: 0;
   padding-right: 0;
@@ -68,6 +65,7 @@ const Wrapper = styled.section`
     height: 75px;
   }
   @media (min-width: 576px) {
+    padding-top: 22rem;
     .partners-logo-container {
         display: flex;
         align-items: center;

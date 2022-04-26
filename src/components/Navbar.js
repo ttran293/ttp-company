@@ -52,7 +52,6 @@ const NavContainer = styled.nav`
   .nav-center {
     width: 90vw;
     margin: 0 auto;
- 
   }
   .nav-header {
     display: flex;
@@ -109,7 +108,7 @@ const NavContainer = styled.nav`
         letter-spacing: var(--spacing);
         padding: 0.5rem;
         &:hover {
-          border-bottom: 2px solid var(--clr-primary-7);
+          border-bottom: 1px solid var(--clr-black);
         }
       }
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/LogoShort.png";
+import logo from "../assets/Logo.png";
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
@@ -33,13 +33,6 @@ const Sidebar = () => {
               </li>
             )
           })}
-          {/* {myUser && (
-            <li>
-              <Link to='/checkout' onClick={closeSidebar}>
-                checkout
-              </Link>
-            </li>
-          )} */}
         </ul>
         <CartButtons />
       </aside>
@@ -69,8 +62,9 @@ const SidebarContainer = styled.div`
     color: var(--clr-red-light);
   }
   .logo {
-    justify-self: center;
-    height: 45px;
+    width: 150px;
+    margin-left: -50px;
+    margin-top: 10px;
   }
   .links {
     margin-bottom: 2rem;
@@ -116,6 +110,6 @@ const SidebarContainer = styled.div`
       display: none;
     }
   }
-`
+`;
 
 export default Sidebar

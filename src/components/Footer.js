@@ -54,23 +54,18 @@ const columns = [
     ],
   },
   {
-    title: "Chính sách",
+    title: "Lorem ipsum",
     resources: [
       {
-        name: "Bảo mật",
+        name: "Địa chỉ",
         link: "/about",
       },
       {
-        name: "Vận chuyển",
-        link: "/about",
-      },
-      {
-        name: "Hoạt động",
+        name: "Culture",
         link: "/about",
       },
     ],
   },
- 
 ];
 
 const Footer = () => {
@@ -97,16 +92,31 @@ const Footer = () => {
 }
 
 const Wrapper = styled.footer`
-  margin: 4rem auto;
-  max-width: var(--max-width);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .stay-connected-title{
-    display:none;
-  } 
+  .stay-connected-title {
+    display: none;
+  }
+  .footer-container {
+    padding: 0px;
+    display: block;
+    height: auto;
+    width: auto;
+  }
+  .columns {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .first-row {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
   @media (min-width: 776px) {
+    margin: 4rem auto;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: var(--spacing);
     .footer-container {
       padding: 0px;
     }

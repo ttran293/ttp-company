@@ -29,7 +29,7 @@ const Contact = () => {
   );
 }
 const Wrapper = styled.section`
-  padding: 5rem 0;
+  padding-top: 5rem;
   h3 {
     text-transform: none;
   }
@@ -66,7 +66,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: var(--clr-white);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 1280px) {
-    padding: 15rem 0;
+  
   }
 `
 

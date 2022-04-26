@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/Logo.png";
+import logo from "../assets/Logo.png"
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
@@ -11,7 +11,7 @@ import { useUserContext } from '../context/user_context'
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext()
   const { myUser } = useUserContext()
-
+   //asd
   return (
     <SidebarContainer>
       <aside

@@ -7,7 +7,7 @@ import Error from './ErrorPage'
 import Checkout from './CheckoutPage'
 import PrivateRoute from './PrivateRoute'
 import AuthWrapper from './AuthWrapper'
-
+import LandingPage from "./LandingPage";
 export {
   Home,
   Products,
@@ -18,4 +18,5 @@ export {
   Checkout,
   PrivateRoute,
   AuthWrapper,
-}
+  LandingPage,
+};

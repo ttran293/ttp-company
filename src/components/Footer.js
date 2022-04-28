@@ -92,6 +92,8 @@ const Footer = () => {
 }
 
 const Wrapper = styled.footer`
+  margin: 12rem auto 4rem auto;
+  border-top: 1px solid black;
   .stay-connected-title {
     display: none;
   }
@@ -111,7 +113,7 @@ const Wrapper = styled.footer`
     margin-top: 1rem;
   }
   @media (min-width: 776px) {
-    margin: 4rem auto;
+    margin: 12rem auto 4rem auto;
     max-width: var(--max-width);
     display: flex;
     align-items: center;

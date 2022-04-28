@@ -1,20 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import dongtam from "../assets/partners/dongtam.jpg";
 import hatien from "../assets/partners/hatien.png";
 import inax from "../assets/partners/inax.png";
 import insee from "../assets/partners/insee.png";
 import spec from "../assets/partners/spec.png";
-import toto from "../assets/partners/toto.png";
 import weber from "../assets/partners/weber.jpg";
+import kuto from "../assets/partners/kuto.png";
 
-const settings = {
-  arrows: false,
-  autoplay: true,
-  dots: true,
-  duration: 100,
-};
 
 const Partners = () => {
   return (
@@ -26,13 +19,13 @@ const Partners = () => {
           thế giới để cung cấp nhiều mặt hàng mới nhất.
         </p>
         <div className="partners-logo-container">
-          <img src={inax} alt="nice table" className="partners-logo" />
-          <img src={insee} alt="nice table" className="partners-logo" />
-          <img src={dongtam} alt="nice table" className="partners-logo" />
-          <img src={hatien} alt="nice table" className="partners-logo" />
-          <img src={spec} alt="nice table" className="partners-logo" />
-          <img src={toto} alt="nice table" className="partners-logo" />
-          <img src={weber} alt="nice table" className="partners-logo" />
+          <img src={inax} alt="partner logo" className="partners-logo" />
+          <img src={insee} alt="partner logo" className="partners-logo" />
+          <img src={dongtam} alt="partner logo" className="partners-logo" />
+          <img src={hatien} alt="partner logo" className="partners-logo" />
+          <img src={spec} alt="partner logo" className="partners-logo" />
+          <img src={kuto} alt="partner logo" className="partners-logo" />
+          <img src={weber} alt="partner logo" className="partners-logo" />
         </div>
       </div>
     </Wrapper>

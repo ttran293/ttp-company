@@ -12,7 +12,7 @@ const Hero = () => {
           ngôi nhà của bạn
         </h1>
         <p>
-          Thanh Thanh Phương là {" "}
+          Thanh Thanh Phương là{" "}
           <mark>một trong số nhà phân phối số 1 khu vực miền Nam</mark>. Chúng
           tôi chuyên phân phối và cung cấp vật liệu xây dựng, trang trí nội và
           ngoại thất.
@@ -22,7 +22,8 @@ const Hero = () => {
         </Link>
       </article>
       <article className="img-container">
-        <img src={heroBcg} alt="nice table" className="main-img" />
+        <img src={heroBcg} alt="main hero" className="main-img" />
+        
       </article>
     </Wrapper>
   );
@@ -40,19 +41,21 @@ const Wrapper = styled.section`
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
+    color: var(--clr-grey-1);
     font-size: 1rem;
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     grid-template-columns: 1fr 1fr;
     gap: 8rem;
+
     h1 {
       margin-bottom: 2rem;
     }
     p {
       font-size: 1.25rem;
     }
+
     mark {
       background-color: var(--clr-grey-9);
     }
@@ -66,9 +69,8 @@ const Wrapper = styled.section`
     }
     .main-img {
       width: 100%;
-      height: 550px;
       position: relative;
-      border-radius: var(--radius);
+     
       display: block;
       object-fit: cover;
     }
@@ -78,29 +80,7 @@ const Wrapper = styled.section`
       left: 0;
       width: 250px;
       transform: translateX(-50%);
-      border-radius: var(--radius);
-    }
-    .img-container::before {
-      content: "";
-      position: absolute;
-      width: 10%;
-      height: 90%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
-    }
-    .img-container::after {
-      content: "";
-      position: absolute;
-      width: 10%;
-      height: 90%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      right: -10%;
-      border-radius: var(--radius);
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+   
     }
   }
 `;

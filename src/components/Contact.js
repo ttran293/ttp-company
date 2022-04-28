@@ -66,15 +66,18 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-white);
+    background: var(--clr-black);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
     transition: var(--transition);
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
   .submit-btn:hover {
-    color: var(--clr-white);
+    color: var(--clr-black);
+    border-color: 1px solid var(--clr-black);
+  
+    background: var(--clr-white);
   }
   @media (min-width: 992px) {
     .content {
@@ -89,8 +92,7 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 1280px) {
-  
   }
-`
+`;
 
 export default Contact

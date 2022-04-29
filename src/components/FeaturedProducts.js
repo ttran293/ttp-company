@@ -5,7 +5,13 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Product from './Product'
-import products_list from "./../data/product_list";
+import marble1 from "../assets/marble/marble1.jpg";
+import marble2 from "../assets/marble/marble2.jpg";
+import marble4 from "../assets/marble/marble4.jpg";
+
+import marble5 from "../assets/marble/marble5.jpg";
+import marble8 from "../assets/marble/marble8.jpg";
+import marble9 from "../assets/marble/marble9.jpg";
 
 const FeaturedProducts = () => {
   const {
@@ -22,29 +28,99 @@ const FeaturedProducts = () => {
   return (
     <Wrapper className="section">
       <div className="title">
-        <h2>sản phẩm nổi bật</h2>
+        <h2>
+          Từ những bản mẫu <br></br>hoàn hảo nhất
+        </h2>
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
-        {products_list.slice(0, 3).map((product) => {
-          return <Product key={product.id} {...product} />;
-        })}
+        <div className="container">
+          <img src={marble1} alt="marble1" width={300} height={200} />
+          {/* <Link to={`/products/${id}`} className="link">
+            <FaSearch />
+          </Link> */}
+        </div>
+        <div className="container">
+          <img src={marble2} alt="marble1" width={300} height={200} />
+          {/* <Link to={`/products/${id}`} className="link">
+            <FaSearch />
+          </Link> */}
+        </div>
+        <div className="container">
+          <img src={marble4} alt="marble1" width={300} height={200} />
+          {/* <Link to={`/products/${id}`} className="link">
+            <FaSearch />
+          </Link> */}
+        </div>
+        <div className="container">
+          <img src={marble5} alt="marble1" width={300} height={200} />
+        </div>
+        <div className="container">
+          <img src={marble8} alt="marble1" width={300} height={200} />
+        </div>
+        <div className="container">
+          <img src={marble9} alt="marble1" width={300} height={200} />
+        </div>
       </div>
       <Link to="/products" className="btn">
         xem tất cả
       </Link>
+
+
+
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
-
+  .container {
+    position: relative;
+    background: var(--clr-white);
+    border-radius: var(--radius);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    overflow: hidden;
+  }
+  .link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--clr-primary-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: var(--transition);
+    opacity: 0;
+    cursor: pointer;
+    svg {
+      font-size: 1.25rem;
+      color: var(--clr-white);
+    }
+  }
+  .container:hover img {
+    transform: scale(1.05);
+  }
+  .container:hover .link {
+    opacity: 1;
+  }
   .featured {
     margin: 4rem auto;
     display: grid;
     gap: 2.5rem;
-    img {
+    ${
+      "" /* img {
       height: 225px;
+    } */
     }
   }
   .btn {
@@ -58,6 +134,6 @@ const Wrapper = styled.section`
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
   }
-`
+`;
 
 export default FeaturedProducts

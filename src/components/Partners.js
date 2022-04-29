@@ -37,6 +37,8 @@ const Wrapper = styled.section`
   padding-bottom: 0rem;
   padding-left: 0;
   padding-right: 0;
+
+
   width: 100%;
   text-align:center;
 
@@ -58,7 +60,8 @@ const Wrapper = styled.section`
     height: 75px;
   }
   @media (min-width: 576px) {
-    padding-top: 22rem;
+    margin: 22rem auto 20rem auto;
+    
     .partners-logo-container {
         display: flex;
         align-items: center;

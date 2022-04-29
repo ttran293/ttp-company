@@ -40,7 +40,7 @@ const Wrapper = styled.section`
   }
   padding: 5rem 0;
 
-  ${'' /* background: var(--clr-primary-10); */}
+  background: var(--clr-primary-10); 
 
   .header h3 {
     margin-bottom: 2rem;
@@ -73,8 +73,8 @@ const Wrapper = styled.section`
     place-items: center;
     margin-bottom: 1rem;
     border-radius: 50%;
-    background: var(--clr-primary-10);
-    color: var(--clr-black);
+    background: var(--clr-black);
+    color: var(--clr-white);
     svg {
       font-size: 2rem;
     }
@@ -96,5 +96,5 @@ const Wrapper = styled.section`
       transform: translateY(5rem);
     }
   }
-`
+`;
 export default Services

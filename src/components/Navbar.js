@@ -47,6 +47,7 @@ const NavContainer = styled.nav`
   .nav-center {
     width: 90vw;
     margin: 0 auto;
+    max-width: var(--max-width);
   }
   .nav-header {
     display: flex;

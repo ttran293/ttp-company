@@ -13,6 +13,8 @@ import tiles8 from "../assets/tiles/gachmen-rl-2.jpg";
 import tiles9 from "../assets/tiles/gachmen-rl-3.jpg";
 import tiles10 from "../assets/tiles/gachmen-rl-4.jpg";
 
+
+
 const products_list = [
   {
     id: "marble1",

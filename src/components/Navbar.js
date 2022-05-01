@@ -34,6 +34,7 @@ const Navbar = () => {
         </ul>
         <CartButtons />
       </div>
+     
     </NavContainer>
   );
 };

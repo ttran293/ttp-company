@@ -21,6 +21,17 @@ const Footer = () => {
             <a href="#">Giới thiệu</a> | <a href="#"> Liên lạc</a>
           </p>
 
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/vlxdthanhthanhphuong">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.facebook.com/vlxdthanhthanhphuong">
+              <YouTubeIcon />
+            </a>
+            <a href="https://www.facebook.com/vlxdthanhthanhphuong">
+              <InstagramIcon />
+            </a>
+          </div>
           <p class="footer-company-name">
             © {new Date().getFullYear()} Thanh Thanh Phương
           </p>
@@ -35,12 +46,11 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
-            <PhoneIcon />
-            <p>0613980368</p>
+          <div className="footer-info">
+            <PhoneIcon /> <p> 0613980368</p>
           </div>
-          <div>
-            <EmailIcon />
+          <div className="footer-info">
+            <EmailIcon />{" "}
             <p>
               <a href="mailto:thanhnamtran997@gmail.com">
                 vlxdthanhthanhphuong@gmail.com
@@ -50,20 +60,31 @@ const Footer = () => {
         </div>
         <div class="footer-right">
           <p class="footer-company-about">
-            <span>Vật liệu xây dưng và trang trí nội thất</span>
-            một trong số nhà phân phối lớn nhất Khu vực miền Nam chuyên
-            phân phối và cung cấp vlxd & trang trí nội, ngoại thất, thiết bị cho các công trình xây dựng lớn và những công trình dân dụng
+            <span>Thanh Thanh Phương</span>
+            một trong số nhà phân phối lớn nhất Khu vực miền Nam chuyên phân
+            phối và cung cấp vlxd & trang trí nội, ngoại thất, thiết bị cho các
+            công trình xây dựng lớn và những công trình dân dụng. Để nhận thông
+            tin về những sản phẩm mới ra mắt và nắm bắt những mặt hàng đang giảm
+            giá tại đây
           </p>
-          <div class="footer-icons">
-            <a href="#">
-              <FacebookIcon />
-            </a>
-            <a href="#">
-              <YouTubeIcon />
-            </a>
-            <a href="#">
-              <InstagramIcon />
-            </a>
+
+          <div className="content">
+            
+            <form
+              className="contact-form"
+              action="your form spree id"
+              method="POST"
+            >
+              <input
+                type="email"
+                className="form-input"
+                placeholder="Email của bạn"
+                name="_replyto"
+              />
+              <button type="submit" className="submit-btn">
+                đăng ký
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -73,9 +94,9 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
   margin-top: 5rem;
- 
+
   background-color: var(--clr-primary-10);
-  
+
   .footer-distributed {
     width: 100%;
     text-align: left;
@@ -126,8 +147,6 @@ const Wrapper = styled.footer`
 
   .footer-distributed .footer-company-name {
     color: var(--clr-black);
-    font-size: 14px;
-    font-weight: normal;
     margin: 0;
   }
 
@@ -142,18 +161,22 @@ const Wrapper = styled.footer`
     color: var(--clr-black);
     vertical-align: middle;
     margin: 0;
+    margin-left: 1rem;
   }
 
   .footer-distributed .footer-center p span {
     display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
   }
 
   .footer-distributed .footer-center p a {
     color: var(--clr-black);
     text-decoration: none;
+  }
+
+  .footer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
   }
 
   /* Footer Right */
@@ -163,11 +186,8 @@ const Wrapper = styled.footer`
   }
 
   .footer-distributed .footer-company-about {
-    line-height: 20px;
     color: var(--clr-black);
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
+    margin: 0 0 1rem 0;
   }
 
   .footer-distributed .footer-company-about span {
@@ -175,7 +195,6 @@ const Wrapper = styled.footer`
     color: var(--clr-black);
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 20px;
   }
 
   .footer-distributed .footer-icons {
@@ -187,18 +206,55 @@ const Wrapper = styled.footer`
     width: 35px;
     height: 35px;
     cursor: pointer;
-
     border-radius: 2px;
-
-    font-size: 20px;
     color: var(--clr-black);
     text-align: center;
     line-height: 35px;
-
     margin-right: 3px;
     margin-bottom: 5px;
   }
 
+  .contact-form {
+    width: 90vw;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .form-input,
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--clr-black);
+  }
+  .form-input {
+    border-right: none;
+    color: var(--clr-grey-3);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+  }
+  .submit-btn {
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+  }
+  .form-input::placeholder {
+    color: var(--clr-black);
+    text-transform: capitalize;
+  }
+  .submit-btn {
+    background: var(--clr-black);
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--clr-white);
+  }
+  .submit-btn:hover {
+    color: var(--clr-black);
+    border-color: 1px solid var(--clr-black);
+
+    background: var(--clr-white);
+  }
   @media (max-width: 776px) {
     .footer-distributed {
     }
@@ -210,6 +266,10 @@ const Wrapper = styled.footer`
       width: 100%;
       margin-bottom: 40px;
       text-align: center;
+    }
+
+    .footer-info {
+      justify-content: center;
     }
 
     .footer-distributed .footer-center i {

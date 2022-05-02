@@ -7,26 +7,31 @@ import insee from "../assets/partners/insee.png";
 import spec from "../assets/partners/spec.png";
 import weber from "../assets/partners/weber.jpg";
 import kuto from "../assets/partners/kuto.png";
-
+import Fade from "react-reveal/Fade";
 
 const Partners = () => {
   return (
     <Wrapper>
       <div className="section-center">
-        <h3>Đối tác kinh doanh</h3>
-        <p>
-          Thanh Thanh Phương cộng tác với nhiều doanh nghiệp và tổ chức lớn trên
-          thế giới để cung cấp nhiều mặt hàng mới nhất.
-        </p>
-        <div className="partners-logo-container">
-          <img src={inax} alt="partner logo" className="partners-logo" />
-          <img src={insee} alt="partner logo" className="partners-logo" />
-          <img src={dongtam} alt="partner logo" className="partners-logo" />
-          <img src={hatien} alt="partner logo" className="partners-logo" />
-          <img src={spec} alt="partner logo" className="partners-logo" />
-          <img src={kuto} alt="partner logo" className="partners-logo" />
-          <img src={weber} alt="partner logo" className="partners-logo" />
-        </div>
+        <Fade top>
+          <h3>Đối tác kinh doanh</h3>
+          <p>
+            Thanh Thanh Phương cộng tác với nhiều doanh nghiệp và tổ chức lớn
+            trên thế giới để cung cấp nhiều mặt hàng mới nhất.
+          </p>
+        </Fade>
+        <Fade top>
+          {" "}
+          <div className="partners-logo-container">
+            <img src={inax} alt="partner logo" className="partners-logo" />
+            <img src={insee} alt="partner logo" className="partners-logo" />
+            <img src={dongtam} alt="partner logo" className="partners-logo" />
+            <img src={hatien} alt="partner logo" className="partners-logo" />
+            <img src={spec} alt="partner logo" className="partners-logo" />
+            <img src={kuto} alt="partner logo" className="partners-logo" />
+            <img src={weber} alt="partner logo" className="partners-logo" />
+          </div>
+        </Fade>
       </div>
     </Wrapper>
   );

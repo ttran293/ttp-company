@@ -2,29 +2,33 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/hero-bcg.jpg'
+import Fade from "react-reveal/Fade";
 
 const Hero = () => {
   return (
     <Wrapper className="section-center">
-      <article className="content">
-        <h1>
-          Hãy thiết kế <br />
-          ngôi nhà của bạn
-        </h1>
-        <p>
-          Thanh Thanh Phương là{" "}
-          <mark>một trong số nhà phân phối số 1 khu vực miền Nam</mark>. Chúng
-          tôi chuyên phân phối và cung cấp vật liệu xây dựng, trang trí nội và
-          ngoại thất.
-        </p>
-        <Link to="/products" className="btn hero-btn">
-          xem thêm
-        </Link>
-      </article>
-      <article className="img-container">
-        <img src={heroBcg} alt="main hero" className="main-img" />
-        
-      </article>
+      <Fade left>
+        <article className="content">
+          <h1>
+            Hãy thiết kế <br />
+            ngôi nhà của bạn
+          </h1>
+          <p>
+            Thanh Thanh Phương là{" "}
+            <mark>một trong số nhà phân phối số 1 khu vực miền Nam</mark>. Chúng
+            tôi chuyên phân phối và cung cấp vật liệu xây dựng, trang trí nội và
+            ngoại thất.
+          </p>
+          <Link to="/products" className="btn hero-btn">
+            xem thêm
+          </Link>
+        </article>
+      </Fade>
+      <Fade right>
+        <article className="img-container">
+          <img src={heroBcg} alt="main hero" className="main-img" />
+        </article>
+      </Fade>
     </Wrapper>
   );
 }

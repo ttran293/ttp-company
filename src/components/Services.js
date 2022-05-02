@@ -1,29 +1,37 @@
 import React from 'react'
 import styled from 'styled-components'
 import { services } from '../utils/constants'
+import Fade from "react-reveal/Fade";
 
 const Services = () => {
   return (
     <Wrapper>
       <div className="section-center">
         <article className="header">
-          <h3>
-            Sẵn sàng có được <br /> những vật liệu <br />
-            chất lượng tốt nhất
-          </h3>
-          <p>
-            Đến với Showroom Thanh Thanh Phương bạn sẽ không chỉ nhận được sự tư
-            vấn nhiệt tình mà còn được hưởng mức giá cạnh tranh nhất.
-          </p>
+          <Fade left>
+            <h3>
+              Sẵn sàng có được <br /> những vật liệu <br />
+              chất lượng tốt nhất
+            </h3>
+          </Fade>
+          <Fade right>
+            <p>
+              Đến với Showroom Thanh Thanh Phương bạn sẽ không chỉ nhận được sự
+              tư vấn nhiệt tình mà còn được hưởng mức giá cạnh tranh nhất.
+            </p>
+          </Fade>
         </article>
         <div className="services-center">
           {services.map((service) => {
             const { id, icon, title, text } = service;
             return (
               <article key={id} className="service">
-                <span className="icon">{icon} </span>
-                <h4>{title}</h4>
-                <p>{text}</p>
+                <Fade bottom>
+                  {" "}
+                  <span className="icon">{icon} </span>
+                  <h4>{title}</h4>
+                  <p>{text}</p>
+                </Fade>
               </article>
             );
           })}

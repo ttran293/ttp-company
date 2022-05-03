@@ -30,62 +30,52 @@ const FeaturedProducts = () => {
   }
   return (
     <Wrapper className="section">
-      <div className="title">
-        <Fade>
+      <Fade>
+        <div className="title">
           <h2>
             Từ những bản mẫu <br></br>hoàn hảo nhất
           </h2>
-        </Fade>
 
-        <div className="underline"></div>
-      </div>
-      <div className="section-center featured">
-        <div className="container">
-          <Fade>
+          <div className="underline"></div>
+        </div>
+      </Fade>
+
+      <Fade>
+        <div className="section-center featured">
+          <div className="container">
             <img src={marble1} alt="marble1" width={300} height={200} />
-          </Fade>
-
-          {/* <Link to={`/products/${id}`} className="link">
+            {/* <Link to={`/products/${id}`} className="link">
             <FaSearch />
           </Link> */}
-        </div>
-        <div className="container">
-          <Fade>
+          </div>
+          <div className="container">
             <img src={marble2} alt="marble1" width={300} height={200} />
-          </Fade>
 
-          {/* <Link to={`/products/${id}`} className="link">
+            {/* <Link to={`/products/${id}`} className="link">
             <FaSearch />
           </Link> */}
-        </div>
-        <div className="container">
-          <Fade>
+          </div>
+          <div className="container">
             <img src={marble4} alt="marble1" width={300} height={200} />
-          </Fade>
 
-          {/* <Link to={`/products/${id}`} className="link">
+            {/* <Link to={`/products/${id}`} className="link">
             <FaSearch />
           </Link> */}
-        </div>
-        <div className="container">
-          <Fade>
+          </div>
+          <div className="container">
             <img src={marble5} alt="marble1" width={300} height={200} />
-          </Fade>
-        </div>
-        <div className="container">
-          <Fade>
+          </div>
+          <div className="container">
             <img src={marble8} alt="marble1" width={300} height={200} />
-          </Fade>
-        </div>
-        <div className="container">
-          <Fade>
+          </div>
+          <div className="container">
             <img src={marble9} alt="marble1" width={300} height={200} />
-          </Fade>
+          </div>
         </div>
-      </div>
-      <Link to="/products" className="btn">
-        xem tất cả
-      </Link>
+        <Link to="/products" className="btn">
+          xem tất cả
+        </Link>
+      </Fade>
     </Wrapper>
   );
 }

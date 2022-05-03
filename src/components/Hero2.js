@@ -1,41 +1,34 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import heroBcg from "../assets/hero-bcg.jpg";
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import livingroom3 from "../assets/livingroom3.jpg";
+import livingroom2 from "../assets/livingroom2.jpg";
+import livingrom from "../assets/livingroom.jpg";
 import Fade from "react-reveal/Fade";
 
-const Hero = () => {
+const Hero2 = () => {
   return (
     <Wrapper className="section-center">
-    
       <Fade left>
-        <article className="content">
-          <h1>
-            Lựa chọn chất liệu phù hợp <br />
-            cho ngôi nhà của bạn
-          </h1>
-          <p>
-            Thanh Thanh Phương chuyên phân phối và cung cấp các loại gạch ốp
-            tường cùng sơn tường không những mang lại không gian sạch sẽ mà còn
-            toát lên sự sang trọng, hiện đại trong từng góc cạnh.
-          </p>
-          {/* <Link to="/products" className="btn hero-btn">
-            xem thêm
-          </Link> */}
+        <article className="img-container">
+          <img src={livingrom} alt="main hero" className="main-img" />
+        </article>
+      </Fade>
+      <Fade bottom>
+        <article className="img-container">
+          <img src={livingroom3} alt="main hero" className="main-img" />
         </article>
       </Fade>
       <Fade right>
         <article className="img-container">
-          <img src={heroBcg} alt="main hero" className="main-img" />
-         
+          <img src={livingroom2} alt="main hero" className="main-img" />
         </article>
       </Fade>
     </Wrapper>
   );
-};
+}
 
 const Wrapper = styled.section`
-  min-height: 60vh;
   display: grid;
   place-items: center;
   .img-container {
@@ -58,9 +51,6 @@ const Wrapper = styled.section`
     font-size: 2rem;
   }
 
-  .content {
-    text-align: center;
-  }
   p {
     line-height: 2;
     max-width: 45em;
@@ -69,8 +59,8 @@ const Wrapper = styled.section`
     font-size: 1rem;
   }
   @media (min-width: 992px) {
-    height: calc(100vh - 5rem);
-    grid-template-columns: 1fr 1fr;
+    ${"" /* height: calc(100vh - 5rem); */}
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 8rem;
 
     h1 {
@@ -97,7 +87,8 @@ const Wrapper = styled.section`
 
       display: block;
       object-fit: cover;
-      transition: var(--transition);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
       overflow: hidden;
     }
     .main-img:hover {
@@ -106,4 +97,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Hero;
+export default Hero2

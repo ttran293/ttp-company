@@ -3,19 +3,23 @@ import {
   FeaturedProducts,
   Hero,
   Services,
-  Contact,
+  Hero2,
+  Hero3,
   Partners,
+  FAQ,
 } from "../components";
 const HomePage = () => {
   return (
     <main>
       <Hero />
+      <Hero3 />
+      <Hero2 />
       <FeaturedProducts />
       <Services />
       <Partners />
-      {/* <Contact /> */}
+      <FAQ />
     </main>
-  )
+  );
 }
 
 export default HomePage

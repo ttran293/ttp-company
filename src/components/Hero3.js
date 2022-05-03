@@ -1,38 +1,33 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import heroBcg from "../assets/hero-bcg.jpg";
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import bed from '../assets/bedroom.jpg'
 import Fade from "react-reveal/Fade";
 
-const Hero = () => {
+const Hero3 = () => {
   return (
     <Wrapper className="section-center">
-    
       <Fade left>
+        <article className="img-container">
+          <img src={bed} alt="main hero" className="main-img" />
+        </article>
+      </Fade>
+      <Fade right>
         <article className="content">
-          <h1>
-            Lựa chọn chất liệu phù hợp <br />
-            cho ngôi nhà của bạn
-          </h1>
+          <h1>Cảm giác ấm cúng</h1>
           <p>
-            Thanh Thanh Phương chuyên phân phối và cung cấp các loại gạch ốp
-            tường cùng sơn tường không những mang lại không gian sạch sẽ mà còn
-            toát lên sự sang trọng, hiện đại trong từng góc cạnh.
+            Thanh Thanh Phương chia sẻ cách thiết kế và đồ nội thất để tạo nên
+            một không gian ấm cúng và trọn vẹn khi những người thân yêu trong
+            gia đình được gần gũi nhau
           </p>
           {/* <Link to="/products" className="btn hero-btn">
             xem thêm
           </Link> */}
         </article>
       </Fade>
-      <Fade right>
-        <article className="img-container">
-          <img src={heroBcg} alt="main hero" className="main-img" />
-         
-        </article>
-      </Fade>
     </Wrapper>
   );
-};
+}
 
 const Wrapper = styled.section`
   min-height: 60vh;
@@ -40,22 +35,6 @@ const Wrapper = styled.section`
   place-items: center;
   .img-container {
     display: none;
-  }
-
-  footer {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  footer p {
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    color: var(--clr-primary-5);
-    letter-spacing: var(--spacing);
-    font-size: 2rem;
   }
 
   .content {
@@ -106,4 +85,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Hero;
+export default Hero3

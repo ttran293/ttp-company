@@ -1,7 +1,7 @@
 import React from "react";
 import test from "../assets/video/test.mp4";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <PageWrapper>
@@ -10,16 +10,19 @@ const LandingPage = () => {
           <source src={test} type="video/mp4" />
         </video>
 
-        <h1 className="titleLanding">
-          Hãy thiết kế <br />
-          ngôi nhà của bạn
-        </h1>
+        <h3 className="titleLanding">
+          Thiết kế ngôi nhà <br></br> của bạn cùng
+          <br /> Thanh Thanh Phương
+        </h3>
         <p>
           Thanh Thanh Phương là{" "}
           <mark>một trong số nhà phân phối số 1 khu vực miền Nam</mark>. Chúng
           tôi chuyên phân phối và cung cấp vật liệu xây dựng, trang trí nội và
           ngoại thất.
         </p>
+        <Link to="/products" className="btn hero-btn">
+            xem thêm
+        </Link>
       </main>
     </PageWrapper>
   );
@@ -35,6 +38,7 @@ const PageWrapper = styled.div`
     left: 30%;
     color: var(--clr-white);
   }
+ 
   #myVideo {
     position: fixed;
     right: 0;

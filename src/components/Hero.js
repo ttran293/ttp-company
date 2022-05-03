@@ -3,21 +3,17 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import heroBcg from "../assets/hero-bcg.jpg";
 import Fade from "react-reveal/Fade";
-
+import test from "../assets/video/test.mp4";
 const Hero = () => {
   return (
     <Wrapper className="section-center">
-    
       <Fade left>
         <article className="content">
-          <h1>
-            Lựa chọn chất liệu phù hợp <br />
-            cho ngôi nhà của bạn
-          </h1>
+          <h1>Thanh Thanh Phương</h1>
           <p>
-            Thanh Thanh Phương chuyên phân phối và cung cấp các loại gạch ốp
-            tường cùng sơn tường không những mang lại không gian sạch sẽ mà còn
-            toát lên sự sang trọng, hiện đại trong từng góc cạnh.
+            một trong số nhà phân phối số 1 Khu vực miền Nam chuyên phân phối và
+            cung cấp vlxd & trang trí nội, ngoại thất, thiết bị vệ sinh cho các
+            công trình xây dựng lớn và những công trình dân dụng.
           </p>
           {/* <Link to="/products" className="btn hero-btn">
             xem thêm
@@ -26,8 +22,17 @@ const Hero = () => {
       </Fade>
       <Fade right>
         <article className="img-container">
-          <img src={heroBcg} alt="main hero" className="main-img" />
-         
+          {/* <img src={test} alt="main hero" className="main-img" /> */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            id="myVideo"
+            className="main-img"
+          >
+            <source src={test} type="video/mp4" />
+          </video>
         </article>
       </Fade>
     </Wrapper>

@@ -14,7 +14,7 @@ const Hero3 = () => {
       </Fade>
       <Fade right>
         <article className="content">
-          <h1>Cảm giác ấm cúng</h1>
+          <h2>Cảm giác ấm cúng</h2>
           <p>
             Thanh Thanh Phương chia sẻ cách thiết kế và đồ nội thất để tạo nên
             một không gian ấm cúng và trọn vẹn khi những người thân yêu trong

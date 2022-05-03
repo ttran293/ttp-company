@@ -48,7 +48,7 @@ const Wrapper = styled.section`
     font-size: 1rem;
   }
   @media (min-width: 992px) {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 15rem);
     grid-template-columns: 1fr 1fr;
     gap: 8rem;
 

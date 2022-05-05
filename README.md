@@ -1,17 +1,9 @@
-## Notes
+# Thanh Thanh Phuong Company
 
-#### Older React Version
+[https://www.vlxdthanhthanhphuong.com/](https://www.vlxdthanhthanhphuong.com/).
 
-```
-"react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-scripts": "3.4.3",
-```
+Thanh Thanh Phuong is a company based in Vietnam. They focus on selling building materials, in/exterior designs products. 
+The main goal of the website is to introduce the company, space for daily blogs, image templates, and boost sale by making it easier for their customers to browse productcs. 
 
-#### Current React Version
+This app is build using ReactJS, MaterialUI, and React-Reveal.
 
-```
-"react": "^17.0.1",
-"react-dom": "^17.0.1",
-"react-scripts": "4.0.0",
-```

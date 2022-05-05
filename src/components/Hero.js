@@ -20,7 +20,6 @@ const Hero = () => {
           </Link> */}
         </article>
       </Fade>
-      <Fade right>
         <article className="img-container">
           {/* <img src={test} alt="main hero" className="main-img" /> */}
           <video
@@ -34,7 +33,6 @@ const Hero = () => {
             <source src={test} type="video/mp4" />
           </video>
         </article>
-      </Fade>
     </Wrapper>
   );
 };

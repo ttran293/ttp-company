@@ -93,8 +93,13 @@ const SingleProductPage = () => {
 
 const Wrapper = styled.main`
   .main {
-    height: 200px;
+    height: 600px;
+  }
+  img {
     width: 100%;
+    display: block;
+    border-radius: var(--radius);
+    object-fit: contain;
   }
   .product-center {
     display: grid;
@@ -118,10 +123,14 @@ const Wrapper = styled.main`
     }
   }
 
+  @media (max-width: 576px) {
+    .main {
+      height: 300px;
+    }
+  }
   @media (min-width: 992px) {
     .main {
       height: 500px;
-      width: 100%;
     }
     .product-center {
       grid-template-columns: 1fr 1fr;

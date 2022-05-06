@@ -62,8 +62,8 @@ Global Styles
 body {
   font-family: 'Inter', sans-serif;
   background: var(--clr-white);
-  color: var(--clr-grey-1);
-  line-height: 1.5;
+  color: var(--clr-black);
+  line-height: 21px;
   font-size: 0.875rem;
 }
 
@@ -97,6 +97,27 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+h1 {
+  margin: 0;
+  /*   animation: colorchange 2s infinite; */
+}
+
+h2.bonus {
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  h2 {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
 }
 
 h3 {

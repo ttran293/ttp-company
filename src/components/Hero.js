@@ -10,29 +10,33 @@ const Hero = () => {
       <Fade left>
         <article className="content">
           <h1>Thanh Thanh Phương</h1>
+
           <p>
             một trong số nhà phân phối số 1 Khu vực miền Nam chuyên phân phối và
-            cung cấp vlxd & trang trí nội, ngoại thất, thiết bị vệ sinh cho các
-            công trình xây dựng lớn và những công trình dân dụng.
+            cung cấp{" "}
+            <mark>
+              vật liệu xây dựng & trang trí nội, ngoại thất, thiết bị vệ sinh
+            </mark>{" "}
+            cho các công trình xây dựng lớn và những công trình dân dụng.
           </p>
           {/* <Link to="/products" className="btn hero-btn">
             xem thêm
           </Link> */}
         </article>
       </Fade>
-        <article className="img-container">
-          {/* <img src={test} alt="main hero" className="main-img" /> */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            id="myVideo"
-            className="main-img"
-          >
-            <source src={test} type="video/mp4" />
-          </video>
-        </article>
+      <article className="img-container">
+        {/* <img src={test} alt="main hero" className="main-img" /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          id="myVideo"
+          className="main-img"
+        >
+          <source src={test} type="video/mp4" />
+        </video>
+      </article>
     </Wrapper>
   );
 };
@@ -45,31 +49,16 @@ const Wrapper = styled.section`
     display: none;
   }
 
-  footer {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  footer p {
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    color: var(--clr-primary-5);
-    letter-spacing: var(--spacing);
-    font-size: 2rem;
-  }
-
   .content {
     text-align: center;
   }
+
   p {
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-1);
-    font-size: 1rem;
+    color: var(--clr-black);
+    font-size: 1.1rem;
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
@@ -78,9 +67,17 @@ const Wrapper = styled.section`
 
     h1 {
       margin-bottom: 2rem;
+
+      color: var(--clr-primary-5);
+    }
+
+    h1:hover {
+      -webkit-text-stroke: 1px black;
+      -webkit-text-fill-color: white;
     }
     p {
       font-size: 1.25rem;
+      font-weight:500;
     }
 
     mark {

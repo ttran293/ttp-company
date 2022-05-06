@@ -8,6 +8,7 @@ import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
 
+
 const Navbar = () => {
   const { openSidebar } = useProductsContext();
   const { myUser } = useUserContext();
@@ -23,18 +24,27 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="nav-links">
-          {links.map((link) => {
-            const { id, text, url } = link;
-            return (
-              <li key={id}>
-                <Link to={url}>{text}</Link>
-              </li>
-            );
-          })}
+          <li>
+            <Link to="/">Trang Chủ</Link>
+          </li>
+          <li>
+            <Link to="/about">Giới Thiệu</Link>
+          </li>
+          <li>
+            <Link to="/products">Phòng</Link>
+          </li>
+          <li>
+            <Link to="/products">Sản Phẩm</Link>
+          </li>
+          <li>
+            <Link to="/about">Blog</Link>
+          </li>
+          <li>
+            <Link to="/about">Góc Cảm hứng</Link>
+          </li>
         </ul>
         <CartButtons />
       </div>
-     
     </NavContainer>
   );
 };
@@ -45,7 +55,7 @@ const NavContainer = styled.nav`
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background-color:white;
+  background-color: white;
   .nav-center {
     width: 90vw;
     margin: 0 auto;
@@ -81,9 +91,9 @@ const NavContainer = styled.nav`
   }
   @media (min-width: 992px) {
     img {
-      width: 200px;
+      width: 300px;
       margin-top: 15px;
-      margin-left: -65px;
+      margin-left: -120px;
     }
     .nav-toggle {
       display: none;
@@ -100,16 +110,20 @@ const NavContainer = styled.nav`
         margin: 0 0.5rem;
       }
       a {
-        color: var(--clr-grey-3);
-        font-size: 1rem;
+        color: var(--clr-black);
+        font-size: 1.25rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
+        font-weight: 500;
+        text-decoration: none;
         &:hover {
-          border-bottom: 1px solid var(--clr-black);
+          border-bottom: 2px solid var(--clr-black);
         }
       }
     }
+    
+
     .cart-btn-wrapper {
       display: grid;
     }

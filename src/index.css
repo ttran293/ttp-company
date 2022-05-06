@@ -100,8 +100,8 @@ h2 {
 }
 
 h1 {
-  margin: 0;
-  /*   animation: colorchange 2s infinite; */
+  margin: 0;  
+  
 }
 
 h2.bonus {
@@ -182,6 +182,8 @@ p {
   margin: 0 auto;
   max-width: var(--max-width);
 }
+
+
 
 @media screen and (min-width: 992px) {
   .section-center {

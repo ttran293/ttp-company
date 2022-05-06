@@ -32,9 +32,9 @@ const FeaturedProducts = () => {
     <Wrapper className="section">
       <Fade>
         <div className="title">
-          <h2>
+          <h3>
             Từ những bản mẫu <br></br>hoàn hảo nhất
-          </h2>
+          </h3>
 
           <div className="underline"></div>
         </div>

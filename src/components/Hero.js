@@ -63,12 +63,11 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     grid-template-columns: 0.5fr 1fr;
-    gap: 8rem;
+    gap: 4rem;
 
     h1 {
       margin-bottom: 2rem;
-
-      color: var(--clr-primary-5);
+      color: var(--clr-black);
     }
 
     h1:hover {
@@ -77,11 +76,12 @@ const Wrapper = styled.section`
     }
     p {
       font-size: 1.25rem;
-      font-weight:500;
+      font-weight: 500;
+      text-align:left;
     }
 
     mark {
-      background-color: var(--clr-grey-9);
+      background-color: var(--clr-primary-10);
     }
     .hero-btn {
       padding: 0.75rem 1.5rem;

@@ -14,7 +14,7 @@ const Hero3 = () => {
       </Fade>
       <Fade right>
         <article className="content">
-          <h2>Cảm giác ấm cúng</h2>
+          <h3 >Cảm giác ấm cúng</h3>
           <p>
             Thanh Thanh Phương chia sẻ cách thiết kế và đồ nội thất để tạo nên
             một không gian ấm cúng và trọn vẹn khi những người thân yêu trong
@@ -54,7 +54,12 @@ const Wrapper = styled.section`
 
     h1 {
       margin-bottom: 2rem;
+      color: var(--clr-black);
     }
+    h1:hover {
+      -webkit-text-stroke: 1px black;
+      -webkit-text-fill-color: white;
+    } 
     p {
       font-size: 1.25rem;
     }

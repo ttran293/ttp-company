@@ -24,19 +24,21 @@ const Hero = () => {
           </Link> */}
         </article>
       </Fade>
-      <article className="img-container">
-        {/* <img src={test} alt="main hero" className="main-img" /> */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          id="myVideo"
-          className="main-img"
-        >
-          <source src={test} type="video/mp4" />
-        </video>
-      </article>
+      <Fade right>
+        <article className="img-container">
+          {/* <img src={test} alt="main hero" className="main-img" /> */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            id="myVideo"
+            className="main-img"
+          >
+            <source src={test} type="video/mp4" />
+          </video>
+        </article>
+      </Fade>
     </Wrapper>
   );
 };

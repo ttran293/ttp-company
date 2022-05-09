@@ -1,17 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import logo from '../assets/logo.png'
-import { FaBars } from 'react-icons/fa' 
-import { Link } from 'react-router-dom'
-import { links } from '../utils/constants'
-import CartButtons from './CartButtons'
-import { useProductsContext } from '../context/products_context'
-import { useUserContext } from '../context/user_context'
+import React, { useState } from "react";
+import styled from "styled-components";
+import logo from "../assets/logo.png";
+import { FaBars } from "react-icons/fa";
+import { NavLink, Link } from "react-router-dom";
 
+import CartButtons from "./CartButtons";
+import { useProductsContext } from "../context/products_context";
+import { useUserContext } from "../context/user_context";
 
 const Navbar = () => {
   const { openSidebar } = useProductsContext();
   const { myUser } = useUserContext();
+
   return (
     <NavContainer>
       <div className="nav-center">
@@ -30,8 +30,8 @@ const Navbar = () => {
           <li>
             <Link to="/about">Giới Thiệu</Link>
           </li>
-          <li>
-            <Link to="/products">Phòng</Link>
+          <li >
+            <Link to="#">Phòng</Link>
           </li>
           <li>
             <Link to="/products">Sản Phẩm</Link>
@@ -122,7 +122,6 @@ const NavContainer = styled.nav`
         }
       }
     }
-    
 
     .cart-btn-wrapper {
       display: grid;

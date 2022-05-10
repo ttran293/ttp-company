@@ -12,6 +12,7 @@ import {
   About,
   Products,
   PrivateRoute,
+  RoomPage,
   AuthWrapper,
   LandingPage,
 } from "./pages";
@@ -26,6 +27,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/room">
+            <RoomPage />
           </Route>
           <Route exact path="/about">
             <About />

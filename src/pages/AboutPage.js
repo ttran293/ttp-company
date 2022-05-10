@@ -77,7 +77,6 @@ const AboutPage = () => {
             </p>
           </article>
         </Fade>
-
         <Fade bottom>
           <article>
             <div className="title">

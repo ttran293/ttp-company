@@ -8,6 +8,7 @@ import Checkout from './CheckoutPage'
 import PrivateRoute from './PrivateRoute'
 import AuthWrapper from './AuthWrapper'
 import LandingPage from "./LandingPage";
+import RoomPage from "./RoomPage";
 export {
   Home,
   Products,
@@ -19,4 +20,5 @@ export {
   PrivateRoute,
   AuthWrapper,
   LandingPage,
+  RoomPage,
 };

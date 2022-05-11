@@ -30,15 +30,15 @@ const Navbar = () => {
           <li>
             <Link to="/about">Giới Thiệu</Link>
           </li>
-          <li >
-            <Link to="/room">Phòng</Link>
-          </li>
           <li>
             <Link to="/products">Sản Phẩm</Link>
           </li>
           <li>
-            <Link to="/about">Blog</Link>
+            <Link to="/room">Phong Cách</Link>
           </li>
+          {/* <li>
+            <Link to="/about">Blog</Link>
+          </li> */}
           <li>
             <Link to="/about">Góc Cảm hứng</Link>
           </li>

@@ -8,6 +8,14 @@ import metalic2 from "../assets/room/metalic2.jpg";
 import organic1 from "../assets/room/organic1.jpg";
 import organic2 from "../assets/room/organic2.jpg";
 import organic3 from "../assets/room/organic3.jpg";
+
+import popart from "../assets/room/popart.jpg";
+import popart2 from "../assets/room/popart2.jpg";
+import popart3 from "../assets/room/popart3.jpg";
+
+import minimal from "../assets/room/minimal.jpg";
+import minimal2 from "../assets/room/minimal2.jpg";
+
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
@@ -15,7 +23,7 @@ const RoomPage = () => {
   return (
     <main>
       <Slide left>
-        <PageHero title="Nội thất" />
+        <PageHero title="Phong Cách Nội thất" />
       </Slide>
 
       <Wrapper className="page section section-center">
@@ -70,7 +78,7 @@ const RoomPage = () => {
           </article>
         </Fade>
 
-        <article>
+        <article className="onebytwo">
           <p>
             Tiếp đến đó là phong cách Organic: Luôn hướng tới sự tổng hòa về màu
             sắc và chất liệu trong không gian sống, tạo đượcc cảm giác thân
@@ -106,7 +114,7 @@ const RoomPage = () => {
             width={200}
           />
         </article>
-        <article>
+        <article className="onebytwo">
           <img
             src={organic2}
             className="cover"
@@ -144,43 +152,74 @@ const RoomPage = () => {
           sống đầy nghệ thuật.
         </p>
 
-        <Fade bottom>
-          <article></article>
-        </Fade>
+        <article className="onebythree">
+          <img
+            src={popart}
+            className="cover"
+            alt="work"
+            height={800}
+            width={200}
+          />
+          <img
+            src={popart2}
+            className="cover"
+            alt="work"
+            height={800}
+            width={200}
+          />
+          <img
+            src={popart3}
+            className="cover"
+            alt="work"
+            height={800}
+            width={200}
+          />
+        </article>
 
-        <Fade bottom>
-          <article>
-            <img src={metalic} alt="team" />
-            <div className="title">
-              <h3>Dành cho những người có tính cách hướng nội</h3>
-            </div>
-            <p>
-              Những người có tính cách hướng nội, sống khép mình thường có cái
-              nhìn sâu sắc và yêu thích sự tối giản. Bởi vậy, sự lựa chọn phù
-              hợp nhất dành cho những người có tính cách này là phong cách Bắc
-              Âu, phong cách tối giản (Minimalism)… Phong cách thiết kế nội thất
-              tối giản (Minimalism) giảm thiểu đến tối đa những chi tiết trang
-              trí trong không gian, những đường nét và kết cấu được ẩn dấu bên
-              dưới, đi ngược lại với phong cách thiết kế truyền thống về những
-              chi tiết phức tạp và phong phú. Phong cách này hướng đến sự loại
-              bỏ những chi tiết thừa, nhằm mang tới khoảng không gian hoàn hảo.
-              Đặc điểm của phong cách thiết kế này là sử dụng những đường nét
-              thiết kế đơn giản, kết hợp với sự tính toán của các mặt phẳng giúp
-              mang tới không gian có tổng thể hài hòa, đẹp đẽ và thoáng đãng.
-              Hạn chế sử dụng những chi tiết hoặc vật dụng trang trí. Tuy được
-              thiết kế tối giản nhưng vẫn phải đáp ứng được yếu tố về thẩm mỹ,
-              sự tiện nghi trong quá trình sử dụng. Màu sắc cũng hạn chế sử dụng
-              không quá 3 màu trong 1 không gian. Tường nhà thường sử dụng tone
-              màu trung tính hoặc màu trắng để chuyển chú ý của người nhìn tới
-              tone màu tạo điểm nhấn. óm lại, thiết kế nội thất theo phong cách
-              tối giản là sử dụng những cái gì cần thiết nhất thay thế cho những
-              cái cần thiết. Phong cách thiết kế tối giản nhưng không gian sống
-              mang lại thì không tối giản chút nào, rất có chiều sâu. Do đó đây
-              là phong cách thiết kế nội thất phù hợp nhất dành cho những người
-              có tính cách hướng nội.
-            </p>
-          </article>
-        </Fade>
+        <h4>Dành cho những người có tính cách hướng nội</h4>
+        <p>
+          Những người có tính cách hướng nội, sống khép mình thường có cái nhìn
+          sâu sắc và yêu thích sự tối giản. Bởi vậy, sự lựa chọn phù hợp nhất
+          dành cho những người có tính cách này là phong cách Bắc Âu, phong cách
+          tối giản (Minimalism)…
+          <br></br>
+          Phong cách thiết kế nội thất tối giản (Minimalism) giảm thiểu đến tối
+          đa những chi tiết trang trí trong không gian, những đường nét và kết
+          cấu được ẩn dấu bên dưới, đi ngược lại với phong cách thiết kế truyền
+          thống về những chi tiết phức tạp và phong phú.
+          <br></br>
+          Phong cách này hướng đến sự loại bỏ những chi tiết thừa, nhằm mang tới
+          khoảng không gian hoàn hảo. Đặc điểm của phong cách thiết kế này là sử
+          dụng những đường nét thiết kế đơn giản, kết hợp với sự tính toán của
+          các mặt phẳng giúp mang tới không gian có tổng thể hài hòa, đẹp đẽ và
+          thoáng đãng. Hạn chế sử dụng những chi tiết hoặc vật dụng trang trí.
+          Tuy được thiết kế tối giản nhưng vẫn phải đáp ứng được yếu tố về thẩm
+          mỹ, sự tiện nghi trong quá trình sử dụng. Màu sắc cũng hạn chế sử dụng
+          không quá 3 màu trong 1 không gian. Tường nhà thường sử dụng tone màu
+          trung tính hoặc màu trắng để chuyển chú ý của người nhìn tới tone màu
+          tạo điểm nhấn. óm lại, thiết kế nội thất theo phong cách tối giản là
+          sử dụng những cái gì cần thiết nhất thay thế cho những cái cần thiết.
+          Phong cách thiết kế tối giản nhưng không gian sống mang lại thì không
+          tối giản chút nào, rất có chiều sâu. Do đó đây là phong cách thiết kế
+          nội thất phù hợp nhất dành cho những người có tính cách hướng nội.
+        </p>
+
+        <article className="onebytwo">
+          <img
+            src={minimal}
+            className="cover"
+            alt="work"
+            height={800}
+            width={200}
+          />
+          <img
+            src={minimal2}
+            className="cover"
+            alt="work"
+            height={800}
+            width={200}
+          />
+        </article>
       </Wrapper>
     </main>
   );

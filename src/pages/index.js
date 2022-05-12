@@ -9,6 +9,8 @@ import PrivateRoute from './PrivateRoute'
 import AuthWrapper from './AuthWrapper'
 import LandingPage from "./LandingPage";
 import RoomPage from "./RoomPage";
+import IdeasPage from "./IdeasPage";
+
 export {
   Home,
   Products,
@@ -21,4 +23,5 @@ export {
   AuthWrapper,
   LandingPage,
   RoomPage,
+  IdeasPage,
 };

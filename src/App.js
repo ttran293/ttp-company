@@ -14,7 +14,7 @@ import {
   PrivateRoute,
   RoomPage,
   AuthWrapper,
-  LandingPage,
+  IdeasPage,
 } from "./pages";
 
 require("dotenv").config();
@@ -40,8 +40,8 @@ function App() {
           <Route exact path="/products">
             <Products />
           </Route>
-          <Route exact path="/landingPage">
-            <LandingPage />
+          <Route exact path="/IdeasPage">
+            <IdeasPage />
           </Route>
           <Route exact path="/products/:id" children={<SingleProduct />} />
           {/* <PrivateRoute exact path="/checkout">

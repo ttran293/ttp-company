@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link to="/about">Blog</Link>
           </li> */}
           <li>
-            <Link to="/about">Góc Cảm hứng</Link>
+            <Link to="/IdeasPage">Góc Cảm hứng</Link>
           </li>
         </ul>
         <CartButtons />

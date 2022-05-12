@@ -17,11 +17,12 @@ const Footer = () => {
           <h3>Thanh Thanh Phương</h3>
 
           <p class="footer-links">
-            <a href="#">Trang chủ</a> | <a href="#">Blog</a> |{" "}
-            <a href="#">Giới thiệu</a> | <a href="#"> Liên lạc</a>
+            {/* <a href="#">Trang chủ</a> | <a href="#">Blog</a> |{" "}
+            <a href="#">Giới thiệu</a> | <a href="#"> Liên lạc</a> */}
           </p>
 
           <div class="footer-icons">
+
             <a href="https://www.facebook.com/vlxdthanhthanhphuong">
               <FacebookIcon />
             </a>

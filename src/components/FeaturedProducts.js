@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
-import Product from './Product'
+
 import marble1 from "../assets/marble/marble1.jpg";
 import marble2 from "../assets/marble/marble2.jpg";
 import marble4 from "../assets/marble/marble4.jpg";

@@ -2,12 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { Filters, ProductList, Sort, PageHero } from '../components'
 
+import Slide from "react-reveal/Slide";
 const ProductsPage = () => {
   return (
     <main>
-      <PageHero title='Sản phẩm' />
-      <Wrapper className='page'>
-        <div className='section-center products'>
+      <Slide left>
+        <PageHero title="Sản phẩm" />
+      </Slide>
+
+      <Wrapper className="page">
+        <div className="section-center products">
           <Filters />
           <div>
             <Sort />
@@ -16,7 +20,7 @@ const ProductsPage = () => {
         </div>
       </Wrapper>
     </main>
-  )
+  );
 }
 
 const Wrapper = styled.div`

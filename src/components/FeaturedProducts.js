@@ -72,7 +72,7 @@ const FeaturedProducts = () => {
             <img src={marble9} alt="marble1" width={300} height={200} />
           </div>
         </div>
-        <Link to="/products" className="btn">
+        <Link to="/IdeasPage" className="btn">
           xem tất cả
         </Link>
       </Fade>

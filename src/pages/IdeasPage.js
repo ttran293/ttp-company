@@ -1,4 +1,5 @@
-import React from 'react'
+import  React  from "react";
+import { useEffect } from "react";
 import styled from 'styled-components'
 import { PageHero } from '../components'
 
@@ -14,9 +15,28 @@ import marble5 from "../assets/marble/marble5.jpg";
 import marble8 from "../assets/marble/marble8.jpg";
 import marble9 from "../assets/marble/marble9.jpg";
 
+import idea1 from "../assets/room/metalic.jpg";
+import idea2 from "../assets/room/metalic2.jpg";
+
+import idea3 from "../assets/room/organic1.jpg";
+import idea4 from "../assets/room/organic2.jpg";
+import idea5 from "../assets/room/organic3.jpg";
+
+import idea6 from "../assets/room/popart.jpg";
+import idea7 from "../assets/room/popart2.jpg";
+import idea8 from "../assets/room/popart3.jpg";
+
+import idea10 from "../assets/room/minimal.jpg";
+import idea9 from "../assets/room/minimal2.jpg";
+
 
 
 const IdeasPage = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <main>
       <Slide left>
@@ -53,6 +73,34 @@ const IdeasPage = () => {
           </div>
           <div className="container">
             <img src={marble9} alt="marble1" width={500} height={200} />
+          </div>
+
+          <div className="container">
+            <img src={idea1} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea2} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea3} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea4} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea5} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea6} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea7} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea8} alt="marble1" width={500} height={200} />
+          </div>
+          <div className="container">
+            <img src={idea9} alt="marble1" width={500} height={200} />
           </div>
         </div>
       </Wrapper>
